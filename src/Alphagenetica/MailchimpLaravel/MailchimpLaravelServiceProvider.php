@@ -9,7 +9,7 @@ class MailchimpLaravelServiceProvider extends ServiceProvider {
 	 *
 	 * @var bool
 	 */
-	protected $defer = false;
+	protected $defer = true;
 
 	/**
 	 * Bootstrap the application events.
@@ -19,6 +19,9 @@ class MailchimpLaravelServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('alphagenetica/mailchimp-laravel');
+
+		// Fire loaded event
+		$this->app['events']->fire('mailchimp.ready');
 	}
 
 	/**
