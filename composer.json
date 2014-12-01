@@ -1,0 +1,33 @@
+{
+  "name": "alphagenetica/mailchimp-laravel",
+  "description": "This package provides an improved interface to the MailChimp API",
+  "keywords": [
+    "laravel",
+    "mailchimp"
+  ],
+  "homepage": "https://github.com/alphagenetica/mailchimp-laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Drew Hammond",
+      "email": "drew@alphagenetica.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "4.2.*",
+    "mailchimp/mailchimp": "~2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.3"
+  },
+  "autoload": {
+    "classmap": [
+      "src/migrations"
+    ],
+    "psr-0": {
+      "Alphagenetica\\MailchimpLaravel\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
