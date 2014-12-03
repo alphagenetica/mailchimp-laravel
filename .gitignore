@@ -1,4 +1,7 @@
 /bootstrap/compiled.php
+/vendor
+.DS_Store
+/.idea
 .env.*.php
 .env.php
 atlassian-ide-plugin.xml
